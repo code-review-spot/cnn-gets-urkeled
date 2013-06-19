@@ -1,0 +1,24 @@
+{
+  "name": "node-dc-06-2013",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Matthew Chase Whittemore <mcwhittemore@gmail.com>",
+  "description": "Dynamic Images, Static Urls and Configing your Node App for Heroku",
+  "contributors": [
+    {
+      "name": "Matthew Chase Whittemore",
+      "email": "mcwhittemore@gmail.com"
+    } 
+  ],
+  "dependencies": {
+    "express": "3.0.1",
+    "ejs": "https://github.com/mcwhittemore/ejs/tarball/master",
+    "cheerio": "0.12.0",
+    "request": "2.21.0",
+    "webshot": "0.5.0"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.1.x"
+  }
+}
