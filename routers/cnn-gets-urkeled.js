@@ -1,7 +1,7 @@
 var webshot = require("webshot");
 
 module.exports = function(app){
-	app.get("/cnn-gets-urkeled", function(req, res){		
+	app.get("/cnn-gets-urkeled.png", function(req, res){		
 		webshot("http://cnn-gets-urkeled.herokuapp.com/urkel-and-headline", function(err, renderStream) {
 			var img = "";
 
