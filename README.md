@@ -5,6 +5,7 @@ Dynamic Images, Static Urls and Configing your Node App for Heroku
 ## But Why?
 
 1. Kickstarter
+![ghost moc image](http://ks-stretch-goal.herokuapp.com/image/9489dc7a-0559-e15a-76ea-f9ad79cc0d78.png)
 2. Emails
 
 ## Dynamic Images
