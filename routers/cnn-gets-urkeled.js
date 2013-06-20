@@ -1,31 +1,12 @@
-var webshot = require("webshot");
+var request = require("request");
+var cheerio = require("cheerio");
 
 module.exports = function(app){
-	app.get("/cnn-gets-urkeled.png", function(req, res){		
-
-		var opt = {
-			screenSize: {
-    	width: 430,
-    	height: 352
-	  	},
-	  	shotSize: {
-	    	width: 430,
-	    	height: 'all'
-	  	}
-		}
-
-		webshot("http://cnn-gets-urkeled.herokuapp.com/urkel-and-headline", opt, function(err, renderStream) {
-			var img = "";
-
-			renderStream.on("data", function(data){
-				img+=data.toString('binary');
-			});
-
-			renderStream.on("end", function(){
-				res.writeHead(200, {'Content-Type': 'image/png' });
-				res.end(img, 'binary');
-			});
-
+	app.get("/urkel-and-headline", function(req, res){
+		request("http://www.cnn.com/", function(err, rrr, body){
+			$ = cheerio.load(body);
+			var headline = $("h1 a").html();
+			res.render("urkel", {headline:headline})
 		});
 	});
 }

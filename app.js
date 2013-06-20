@@ -15,10 +15,14 @@ app.configure(function(){
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
+//urkel
 require("./routers/cnn")(app);
 require("./routers/cnn-headline")(app);
-require("./routers/urkel-and-headline")(app);
 require("./routers/cnn-gets-urkeled")(app);
+require("./routers/cnn-gets-urkeled-png")(app);
+
+//view num
+require("./routers/viewnum")(app);
 
 var server = require('http').createServer(app)
 
