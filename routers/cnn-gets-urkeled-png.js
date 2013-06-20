@@ -1,4 +1,4 @@
-//var webshot = require("webshot");
+var webshot = require("webshot");
 
 module.exports = function(app){
 	app.get("/cnn-gets-urkeled.png", function(req, res){		
