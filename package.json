@@ -1,5 +1,5 @@
 {
-  "name": "node-dc-06-2013",
+  "name": "cnn-gets-urkeled",
   "version": "0.0.1",
   "private": true,
   "author": "Matthew Chase Whittemore <mcwhittemore@gmail.com>",
@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "express": "3.0.1",
-    "ejs": "https://github.com/mcwhittemore/ejs/tarball/master",
+    "ejs": "*",
     "cheerio": "0.12.0",
     "request": "2.21.0",
     "webshot": "0.5.0"

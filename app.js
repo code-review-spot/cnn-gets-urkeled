@@ -15,7 +15,10 @@ app.configure(function(){
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
-require('./routes/all')(app);
+require("./routers/cnn")(app);
+require("./routers/cnn-headline")(app);
+require("./routers/urkel-and-headline")(app);
+require("./routers/cnn-gets-urkeled")(app);
 
 var server = require('http').createServer(app)
 
