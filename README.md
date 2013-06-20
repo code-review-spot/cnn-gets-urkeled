@@ -20,7 +20,7 @@ Dynamic Images, Static Urls and Configing your Node App for Heroku
 
 ## Config for Heroku
 
-1. Package.json //"node": "0.10.x" did not work...
+1. Package.json //"node": "0.10.x" did not work... something with cb() not being called"
 2. Profile
 3. Heroku Setup
 4. Create App
