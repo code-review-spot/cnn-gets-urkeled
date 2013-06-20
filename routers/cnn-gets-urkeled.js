@@ -1,5 +1,6 @@
 var request = require("request");
 var cheerio = require("cheerio");
+var webshot = require("webshot");
 
 module.exports = function(app){
 	app.get("/urkel-and-headline", function(req, res){
